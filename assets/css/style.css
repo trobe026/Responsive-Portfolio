@@ -1,0 +1,619 @@
+/*Global CSS*/
+html {
+  font-family: 'Muli', sans-serif;
+}
+
+body {
+  background: #D9B310 url(../images/swirl_pattern.png) repeat fixed center;
+  width: 100%;
+}
+
+ul {
+  padding: 30px 0;
+}
+
+li {
+  float: right;
+  display: inline;
+  padding: 0 5px;
+  margin: 0 20px 25px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.75em;
+  color: #eee;
+  background-color: #0B3C5D;
+  width: 30%;
+  height: 66%;
+  padding-top: 10px;
+  margin-left: 100px;
+  text-align: center;
+  position: absolute;
+  top:0;
+  padding-bottom: 16px;
+}
+
+h2 {
+  color:#eee;
+  font-size: 2em;
+  font-family: 'Muli', sans-serif;
+  margin: 20px 0 10px 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #328CC1;
+  width: 87%;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Muli', sans-serif;
+  color:#eee;
+  font-size: 1.5em;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 22px;
+  margin-left: 8px;
+  padding: 0 20px 20px 0;
+  border-bottom: 2px solid #328CC1;
+  width: 92%;
+}
+
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  color: #eee;
+  font-family: 'Questrial', sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+footer {
+  border-top: 7px solid #328CC1;
+  background-color: #1D2731;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  color: #328CC1;
+  padding: 30px 0;
+  text-align: center;
+}
+
+p a {
+  padding: 0;
+}
+
+a {
+  padding: px;
+  color: #eee;
+}
+
+a:hover {
+  background-color: #0B3C5D;
+}
+
+/*header css*/
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #328CC1;
+  border-bottom: 2px solid #0B3C5D;
+  display: inline-block;
+}
+
+#nav-border {
+  border-left: 1px solid #0B3C5D;
+  border-right: 1px solid #0B3C5D;
+  padding: 0 20px;
+}
+
+/*bio css*/
+
+#about-me {
+  max-width: 65%;
+  float: left;
+  background-color: #0B3C5D;
+  border: 1px solid #1D2731;
+}
+
+#about-me img {
+  width: 27%;
+  float: left;
+  padding: 10px 10px;
+}
+
+#bio-footer {
+  position: absolute;
+}
+
+/*portfolio css*/
+
+#port-container {
+  margin: 36px 100px;
+  min-height: calc(120vh - 100px);
+  text-align: center;
+}
+
+#port-images {
+  max-width: 55%;
+  float: left;
+  background-color: #0B3C5D;
+  border: 1px solid #328CC1;
+}
+
+.img {
+  border: .5px solid gray;
+  position: relative;
+  float: left;
+  width: 35%;
+  margin: 25px 0px 0px 25px;
+  left: 6%;
+  -webkit-transition: all 0.7s ease;
+          transition: all 0.7s ease;
+}
+
+.img:last-child {
+  margin-bottom: 25px;
+}
+
+.img img {
+  width:100%;
+}
+
+.img:hover {
+  -webkit-transform:scale(1.2);
+          transform:scale(1.2);
+}
+
+.img h2 {
+  color: #eee;
+  background-color: #328CC1;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  padding: 5px 0;
+  font-size: 1.25em;
+  border-top: 1px solid #1D2731;
+  border-bottom: 1px solid #1D2731;
+  overflow: hidden;
+}
+
+/*contact css*/
+
+form {
+  padding-left: 15px;
+  margin-bottom: :15px;
+  color: #328CC1;
+}
+
+input {
+  padding: 5px;
+  margin: 12px;
+}
+
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #328CC1;
+}
+
+#contact {
+  margin-left: 15px;
+  width: 55%;
+  float: left;
+  background-color: #0B3C5D;
+  border: 1px solid #bbb;
+  padding-right: 13px;
+}
+
+#contact-footer {
+  position: absolute;
+}
+
+/*page css*/
+#thankyou {
+  top: 25%;
+  left: 8%;
+  position: absolute;
+}
+
+#thankyou h1 {
+  font-size: 2em;
+  background-color: rgba(50,140,193,.5);
+  width: 80%;
+  color: #1D2731;
+}
+
+/*Class CSS*/
+.container {
+  margin: 36px 100px;
+}
+
+/*aside css*/
+
+aside {
+  background-color: #0B3C5D;
+  padding: 30px;
+  border: 1px solid #1D2731;
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+
+aside a:hover {
+  background-color: #0B3C5D;
+}
+
+.icon {
+  width: 30%;
+  -webkit-transition: all 1.0s ease;
+          transition: all 1.0s ease;
+}
+
+.icon:hover {
+  -webkit-transform:scale(1.25);
+          transform:scale(1.25);
+        }
+
+/*font awesome*/
+.fa {
+  margin-left: 15px;
+}
+
+/*responsive css*/
+
+@media screen and (max-width: 980px) {
+
+	body {
+
+	}
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    width: 75%;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  h6 {
+    font-size: .75em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+
+  footer {
+    height: 50px;
+    bottom: 0;
+  }
+
+  aside {
+    width: 40%;
+  }
+
+    /*bio page css*/
+    #about-me {
+      max-width: 50%;
+    }
+
+    #about-me img {
+      width: 75%;
+      margin-left: 25px;
+      padding: 10px 10px;
+    }
+
+    #bio-aside {
+      width: 30%;
+      text-align: center;
+    }
+
+    #bio-footer {
+      position:absolute;
+      bottom: -150px;
+    }
+
+
+/*portfolio page css*/
+
+  #port-container {
+  margin: 35px; auto;
+  text-align: center;
+  min-height: calc(210vh - 50px);
+  }
+
+  #port-images {
+    max-width: 45%;
+  }
+
+  .img {
+    width: 80%;
+    margin: 15px 15px;
+  }
+
+  .img h2 {
+    font-size: 1em;
+  }
+
+  .icon {
+    width:20%;
+    padding: 0 5px;
+  }
+
+    /*contact page css*/
+
+  #contact {
+    width: 50%;
+    padding-bottom: 80px;
+
+  }
+
+  #contact-aside {
+    width: 30%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  h1 {
+    font-size: 1.5em;
+    margin-left: 40px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  h6 {
+    font-size: .5em;
+  }
+
+  footer {
+    height: 50px;
+    bottom: 0;
+  }
+
+  aside {
+    width: 86%;
+    margin: 40px auto;
+    float: left;
+    text-align: left;
+  }
+
+  .container {
+    margin: 36px 50px;
+  }
+
+  /*bio page css*/
+
+  #about-me {
+    max-width: 100%;
+    background-color: #0B3C5D;
+    border: 1px solid #1D2731;
+    float: left;
+  }
+
+  #about-me img {
+    width: 35%;
+    float: left;
+    padding: 10px 10px;
+  }
+
+  #bio-aside {
+    margin-top: 80px;
+    width: 90%;
+    float: left;
+  }
+
+
+
+/*portfolio page css*/
+
+  #port-container {
+  margin: 35px 0 0 35px;
+  text-align: center;
+  min-height: calc(150vh - 50px);
+  }
+
+  #port-images {
+    max-width: 95%;
+  }
+
+  .img {
+    width: 40%;
+    margin: 15px 15px;
+  }
+
+  .img h2 {
+    font-size: 1em;
+  }
+
+  .icon {
+    width:10%;
+    padding: 0 5px;
+
+  }
+
+    /*contact page css*/
+    #contact {
+      width: 90%;
+      padding-bottom: 60px;
+      margin-right: 10px;
+
+    }
+
+    #contact-aside {
+      width: 82%;
+      margin-left: 15px;
+
+    }
+
+    #contact-footer {
+      height: 25px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+
+  	html {
+      position:relative;
+      min-height: 100%;
+      overflow: scroll;
+  	}
+
+    body {
+      margin: 0 0 50px;
+    }
+
+    h1 {
+      margin: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    ul {
+      font-size: 1.5em;
+      text-align: center;
+      margin: 0 auto;
+
+    }
+
+    li {
+      padding: 0;
+      margin: 0;
+      background-color: #328CC1;
+      font-size: .5em;
+      text-align: center;
+      width: 29%;
+      float: left;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      width: 75%;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    h6 {
+      font-size: .75em;
+    }
+
+    footer {
+      width: 100%;
+      height: 25px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+    }
+
+    aside {
+      max-width: 75%;
+      margin-left: 25px;
+      margin-bottom: 150px;
+    }
+
+      /*bio page css*/
+
+      .container {
+        margin: 0 0 0 0;
+      }
+
+      #about-me {
+        margin: 25px 0 0 25px;
+        max-width: 90%;
+        background-color: #0B3C5D;
+        border: 1px solid #1D2731;
+        float: left;
+      }
+
+      #about-me img {
+        width: 80%;
+        padding: 10px 10px;
+      }
+
+      #bio-aside {
+        margin: 25px 0 0 25px;
+        width: 90%;
+      }
+
+
+  /*portfolio page css*/
+
+    #port-container {
+    float: none;
+    margin: 35px auto;
+    text-align: center;
+    }
+
+    #port-images {
+      max-width: 85%;
+      margin-left: 25px;
+    }
+
+    #nav-border {
+      padding: 0 10px;
+    }
+
+    .img {
+      width: 75%;
+    }
+
+    .img h2 {
+      font-size: 1em;
+    }
+
+    .icon {
+      width:20%;
+      padding: 0 5px;
+    }
+
+      /*contact page css*/
+      #contact {
+        width: 80%;
+        padding-bottom: 60px;
+        margin: 25px 0 0 35px;
+        float: left;
+      }
+
+      #contact-aside {
+        width: 65%;
+        margin: 25px 0 0 35px;
+      }
+
+      #contact-footer {
+        height: 25px;
+      }
+
+
+  }

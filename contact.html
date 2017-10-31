@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Questrial|Ubuntu" rel="stylesheet">
+    <script src="https://use.fontawesome.com/85f2f82afc.js"></script>
+    <title>Travis' Portfolio | Contact Me</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Travis Roberts</h1>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li id='nav-border'><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html">About</a></li>
+          </ul>
+    </header>
+
+  <div class="container">
+    <section id="contact">
+      <h2>Contact<i class="fa fa-address-book" aria-hidden="true"></i></h2>
+      <form>
+        Name:
+        <input type="text" onfocus="if(this.value == 'i.e. John Smith') {this.value = '';}" onblur="if(this.value == '') {this.value = 'i.e. John Smith';}" value="i.e. John Smith">
+    <br>
+        Email:
+        <input type="text" onfocus="if(this.value == 'example@gmail.com') {this.value = '';}" onblur="if(this.value == '') {this.value = 'example@gmail.com';}" value="example@gmail.com">
+    <br>
+      Message:
+
+        <textarea name="message" onfocus="if(this.value == this.defaultValue) {this.value = '';}" onblur="if(this.value == '') {this.value = this.defaultValue;}" rows="8" cols="80">Type your message here...</textarea>
+
+      </form>
+      <a href="thankyou.html"><input type="submit"></a>
+    </section>
+
+    <aside id="contact-aside">
+      <h3>Connect with Me</h3>
+      <a href="https://github.com/trobe026"><img class='icon' src="./assets/images/github.png" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/travis-roberts-b2580711b/"><img class='icon' src="./assets/images/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://stackoverflow.com/users/8223810/travis-roberts"><img class='icon' src="./assets/images/stackover.png" alt="StackOverflow"></a>
+    </aside>
+
+  </div>
+
+  <footer id="contact-footer">
+      <h6>&copy;Copyright 2017 Travis Roberts</h6>
+  </footer>
+
+  </body>
+</html>
